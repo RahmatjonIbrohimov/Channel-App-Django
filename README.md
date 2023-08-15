@@ -6,7 +6,7 @@ pip install django
 ```
 **CLone uchun**
 ```
-git clone https://github.com/fazliddinbaxtiyorov/channel_app_django.git
+https://github.com/RahmatjonIbrohimov/Channel-App-Django/
 ```
 
 ```bash
