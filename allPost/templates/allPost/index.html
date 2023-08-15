@@ -1,0 +1,24 @@
+{% extends 'allPost/base.html' %}
+
+{% block heading %}
+    <title>Thought Page</title>
+    <script src="https://kit.fontawesome.com/d5b5e10b1b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito:ital,wght@0,400;0,500;1,400&family=Roboto+Mono:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
+    {% endblock %}
+
+{% block content %}
+    <h1>My thought Blog  <i class="fa-solid fa-cloud-bolt"></i></h1>
+    {% for i in post %}
+    <div class="card">
+        <div class="block">
+            <h4><i class="fa-solid fa-user-tie"></i>  {{ i.post_auth }}</h4>
+            <h2>{{ i.post_header }}</h2>
+            <p>{{ i.post_content }}</p>
+            <p id="date">{{ i.post_date|date:'d.m.Y, H.i.s' }}</p>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
